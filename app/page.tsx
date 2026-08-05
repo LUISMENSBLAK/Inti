@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       <section id="manifiesto" className="manifesto section-shell">
-        <Reveal><p className="eyebrow">La casa</p><h2>La belleza aparece<br />cuando nada sobra.</h2></Reveal>
+        <Reveal><p className="eyebrow">La casa</p><h2>La belleza aparece<br />{" "}cuando nada sobra.</h2></Reveal>
         <Reveal className="manifesto-note" delay={0.1}><p>Solee Konn nace de una mirada precisa: observar una forma hasta encontrar su gesto esencial. Cada pieza se presenta con tiempo, cercanía y una atención profundamente personal.</p><span>Forma · Materia · Presencia</span></Reveal>
       </section>
 
