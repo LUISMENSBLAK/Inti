@@ -164,8 +164,9 @@ h3 { font-size: clamp(28px, 3vw, 42px); }
 .check-field { display: flex !important; align-items: center; min-height: 44px; }
 .filter-close { display: none; }
 .catalog-count { padding: 22px 0 50px; color: var(--sk-ink-soft); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
-.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: clamp(45px, 8vw, 130px) clamp(24px, 5vw, 80px); }
-.product-grid .product-card:nth-child(even) { margin-top: 10vw; }
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); align-items: start; gap: clamp(56px, 6vw, 96px) clamp(24px, 5vw, 80px); }
+.catalog-explorer .product-card-image,
+.collection-list .product-card-image { height: auto; aspect-ratio: 1 / 1; }
 .product-grid.compact { grid-template-columns: repeat(3,1fr); }
 .product-grid.compact .product-card { margin-top: 0; }
 .product-grid.compact .product-card-image { height: 35vw; max-height: 620px; }
