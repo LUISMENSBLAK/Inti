@@ -7,11 +7,11 @@ import { RecentlyViewed } from "@/src/components/recently-viewed";
 import { Reveal } from "@/src/components/reveal";
 import { WhatsAppIcon } from "@/src/components/whatsapp-icon";
 import { buildWhatsAppUrl, siteConfig } from "@/src/config/site";
-import { getFeaturedProducts, getProducts } from "@/src/repositories/catalog-repository";
+import { getProducts } from "@/src/repositories/catalog-repository";
 
 export default function Home() {
-  const featured = getFeaturedProducts();
   const products = getProducts();
+  const featured = products;
   const flagship = products[0];
   return (
     <main>
