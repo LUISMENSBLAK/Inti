@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { Box } from "lucide-react";
 import { Component, lazy, Suspense, useState, type ErrorInfo, type ReactNode } from "react";
+import { Image } from "./image";
 
 const ModelCanvas = lazy(() => import("./model-canvas").then((module) => ({ default: module.ModelCanvas })));
 

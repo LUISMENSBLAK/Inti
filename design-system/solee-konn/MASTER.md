@@ -6,10 +6,10 @@
 
 ---
 
-**Project:** Inti Joyería
-**Generated:** 2026-08-04 19:51:41
-**Category:** E-commerce Luxury
-**Design Dials:** Variance 7/10 (Balanced / Modern) | Motion 4/10 (Standard) | Density 2/10 (Spacious)
+**Project:** Solee Konn
+**Generated:** 2026-08-04 20:56:16
+**Category:** Luxury/Premium Brand
+**Design Dials:** Variance 8/10 (Bold / Asymmetric) | Motion 7/10 (Standard) | Density 1/10 (Spacious)
 
 ---
 
@@ -19,18 +19,18 @@
 
 | Role | Hex | CSS Variable |
 |------|-----|--------------|
-| Primary | `#1C1917` | `--color-primary` |
+| Primary | `#18181B` | `--color-primary` |
 | On Primary | `#FFFFFF` | `--color-on-primary` |
-| Secondary | `#44403C` | `--color-secondary` |
-| Accent/CTA | `#A16207` | `--color-accent` |
-| Background | `#FAFAF9` | `--color-background` |
-| Foreground | `#0C0A09` | `--color-foreground` |
+| Secondary | `#3F3F46` | `--color-secondary` |
+| Accent/CTA | `#EC4899` | `--color-accent` |
+| Background | `#FAFAFA` | `--color-background` |
+| Foreground | `#09090B` | `--color-foreground` |
 | Muted | `#E8ECF0` | `--color-muted` |
-| Border | `#D6D3D1` | `--color-border` |
+| Border | `#E4E4E7` | `--color-border` |
 | Destructive | `#DC2626` | `--color-destructive` |
-| Ring | `#1C1917` | `--color-ring` |
+| Ring | `#18181B` | `--color-ring` |
 
-**Color Notes:** Premium dark + gold accent [Accent adjusted from #CA8A04 for WCAG 3:1]
+**Color Notes:** Editorial black + accent pink
 
 ### Typography
 
@@ -46,7 +46,7 @@
 
 ### Spacing Variables
 
-*Density: 2/10 — Spacious*
+*Density: 1/10 — Spacious*
 
 | Token | Value | Usage |
 |-------|-------|-------|
@@ -76,7 +76,7 @@
 ```css
 /* Primary Button */
 .btn-primary {
-  background: #A16207;
+  background: #EC4899;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -93,8 +93,8 @@
 /* Secondary Button */
 .btn-secondary {
   background: transparent;
-  color: #1C1917;
-  border: 2px solid #1C1917;
+  color: #18181B;
+  border: 2px solid #18181B;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
@@ -107,7 +107,7 @@
 
 ```css
 .card {
-  background: #FAFAF9;
+  background: #FAFAFA;
   border-radius: 12px;
   padding: 24px;
   box-shadow: var(--shadow-md);
@@ -133,9 +133,9 @@
 }
 
 .input:focus {
-  border-color: #1C1917;
+  border-color: #18181B;
   outline: none;
-  box-shadow: 0 0 0 3px #1C191720;
+  box-shadow: 0 0 0 3px #18181B20;
 }
 ```
 
@@ -161,20 +161,21 @@
 
 ## Style Guidelines
 
-**Style:** SaaS Mobile (High-Tech Boutique)
+**Style:** Bento Grids
 
-**Keywords:** saas, electric blue, gradient, fintech, spring animation, dual font, glassmorphism, boutique, premium, calistoga, inter, mono, tactile, haptic, bento
+**Keywords:** Apple-style, modular, cards, organized, clean, hierarchy, grid, rounded, soft
 
-**Best For:** B2B SaaS mobile dashboards, fintech apps, developer tool mobile companions, marketing analytics apps, HR/operations apps, modern business productivity
+**Best For:** Product features, dashboards, personal sites, marketing summaries, galleries
 
-**Key Effects:** Spring animations (mass:1 damping:15 stiffness:120); gradient buttons (0052FF→4D7CFF); scale press 0.96→1.0 with haptics; floating FAB with gentle bobbing (Reanimated); glassmorphism BlurView navigation bars; staggered fade-in entrance (Y:20→0 + opacity:0→1); pulsing status dot on section badges; layout transitions (LayoutAnimation or Reanimated entering)
+**Key Effects:** Hover scale (1.02), soft shadow expansion, smooth layout shifts, content reveal
 
 ### Page Pattern
 
-**Pattern Name:** Feature-Rich Showcase
+**Pattern Name:** Horizontal Scroll Journey
 
-- **CTA Placement:** Above fold
-- **Section Order:** Hero > Features > CTA
+- **Conversion Strategy:** Immersive product discovery. High engagement. Keep navigation visible.
+- **CTA Placement:** Floating Sticky CTA or End of Horizontal Track
+- **Section Order:** 1. Intro (Vertical), 2. The Journey (Horizontal Track), 3. Detail Reveal, 4. Vertical Footer
 
 ---
 
@@ -196,8 +197,8 @@ gsap.from('.grid-item', { opacity: 0, scale: 0.92, y: 16, duration: 0.4, stagger
 
 ## Anti-Patterns (Do NOT Use)
 
-- ❌ Vibrant & Block-based
-- ❌ Playful colors
+- ❌ Cheap visuals
+- ❌ Fast animations
 
 ### Additional Forbidden Patterns
 

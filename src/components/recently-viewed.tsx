@@ -9,12 +9,14 @@ export function RecentlyViewed({ products, currentId }: { products: Product[]; c
 
   useEffect(() => {
     try {
-      const saved: string[] = JSON.parse(localStorage.getItem("inti-recent") ?? "[]");
+      const saved: string[] = JSON.parse(localStorage.getItem("sk:recent") ?? "[]");
       const next = currentId ? [currentId, ...saved.filter((id) => id !== currentId)].slice(0, 4) : saved;
-      if (currentId) localStorage.setItem("inti-recent", JSON.stringify(next));
-      setIds(next);
+      if (currentId) localStorage.setItem("sk:recent", JSON.stringify(next));
+      const timer = window.setTimeout(() => setIds(next), 0);
+      return () => window.clearTimeout(timer);
     } catch {
-      setIds([]);
+      const timer = window.setTimeout(() => setIds([]), 0);
+      return () => window.clearTimeout(timer);
     }
   }, [currentId]);
 

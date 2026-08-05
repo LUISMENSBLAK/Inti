@@ -8,21 +8,23 @@ export function FavoriteButton({ productId, showLabel = false }: { productId: st
 
   useEffect(() => {
     try {
-      const saved: string[] = JSON.parse(localStorage.getItem("inti-favorites") ?? "[]");
-      setActive(saved.includes(productId));
+      const saved: string[] = JSON.parse(localStorage.getItem("sk:favorites") ?? "[]");
+      const timer = window.setTimeout(() => setActive(saved.includes(productId)), 0);
+      return () => window.clearTimeout(timer);
     } catch {
-      setActive(false);
+      const timer = window.setTimeout(() => setActive(false), 0);
+      return () => window.clearTimeout(timer);
     }
   }, [productId]);
 
   function toggle() {
-    const saved: string[] = JSON.parse(localStorage.getItem("inti-favorites") ?? "[]");
+    const saved: string[] = JSON.parse(localStorage.getItem("sk:favorites") ?? "[]");
     const next = saved.includes(productId)
       ? saved.filter((id) => id !== productId)
       : [...saved, productId];
-    localStorage.setItem("inti-favorites", JSON.stringify(next));
+    localStorage.setItem("sk:favorites", JSON.stringify(next));
     setActive(next.includes(productId));
-    window.dispatchEvent(new Event("inti:favorites"));
+    window.dispatchEvent(new Event("sk:favorites"));
   }
 
   return (

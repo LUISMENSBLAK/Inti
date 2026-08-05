@@ -20,14 +20,14 @@ export function CatalogExplorer({ products }: { products: Product[] }) {
   useEffect(() => {
     const update = () => {
       try {
-        setFavorites(JSON.parse(localStorage.getItem("inti-favorites") ?? "[]"));
+        setFavorites(JSON.parse(localStorage.getItem("sk:favorites") ?? "[]"));
       } catch {
         setFavorites([]);
       }
     };
     update();
-    window.addEventListener("inti:favorites", update);
-    return () => window.removeEventListener("inti:favorites", update);
+    window.addEventListener("sk:favorites", update);
+    return () => window.removeEventListener("sk:favorites", update);
   }, []);
 
   const visible = useMemo(() => {

@@ -31,7 +31,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
-    image: product.images.map((image) => `${siteConfig.url}${image.src}`),
+    image: product.images.map((image) => `${siteConfig.siteUrl}${image.src}`),
     description: product.seoDescription,
     sku: product.id,
     brand: { "@type": "Brand", name: siteConfig.name },
@@ -42,7 +42,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="product-detail section-shell">
         <ProductGallery images={product.images} name={product.name} />
         <div className="product-summary">
-          <p className="eyebrow">Selección Inti · {product.id}</p>
+          <p className="eyebrow">Edición Primera · {product.id}</p>
           <h1>{product.name}</h1>
           <p className="product-subtitle">{product.subtitle}</p>
           <p className="product-description">{product.description}</p>

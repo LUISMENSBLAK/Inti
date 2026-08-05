@@ -1,22 +1,22 @@
 import type { Product } from "@/src/types/catalog";
 
-const inquiry = (name: string, id: string) => `Hola, me interesa recibir información sobre esta pieza:
+const inquiry = (name: string, id: string) => `Hola Solee Konn, me interesa recibir información sobre esta pieza:
 
 Producto: ${name}
 Referencia: ${id}
-Colección: Selección Inti
+Colección: Edición Primera
 Página: [URL DEL PRODUCTO]
 
 ¿Podrían indicarme disponibilidad, precio y opciones de envío?`;
 
 export const products: Product[] = [
   {
-    id: "INTI-AZ-001",
+    id: "SK-AZ-001",
     slug: "anillo-zafiro-azul",
     name: "Anillo Zafiro Azul",
     subtitle: "Color profundo, proporción clásica",
     category: "anillos",
-    collection: "seleccion-inti",
+    collection: "edicion-primera",
     shortDescription: "Piedra azul ovalada, rodeada de acentos claros sobre metal dorado.",
     description:
       "Una pieza de presencia serena construida alrededor de una piedra central azul. Su composición frontal equilibra volumen, simetría y destellos claros.",
@@ -38,17 +38,17 @@ export const products: Product[] = [
     ],
     model3D: "/products/anillo-zafiro-azul/model.glb",
     poster3D: "/products/anillo-zafiro-azul/frontal.avif",
-    whatsappMessage: inquiry("Anillo Zafiro Azul", "INTI-AZ-001"),
-    seoTitle: "Anillo Zafiro Azul | Inti Joyería",
-    seoDescription: "Conoce el Anillo Zafiro Azul de la Selección Inti y explora sus vistas y modelo 3D.",
+    whatsappMessage: inquiry("Anillo Zafiro Azul", "SK-AZ-001"),
+    seoTitle: "Anillo Zafiro Azul",
+    seoDescription: "Conoce el Anillo Zafiro Azul de Edición Primera y explora sus vistas y modelo 3D.",
   },
   {
-    id: "INTI-DE-002",
+    id: "SK-DE-002",
     slug: "dije-escarabajo",
     name: "Dije Escarabajo",
     subtitle: "Un talismán de líneas orgánicas",
     category: "dijes",
-    collection: "seleccion-inti",
+    collection: "edicion-primera",
     shortDescription: "Dije figurativo en metal plateado con dos acentos azules.",
     description:
       "Una interpretación gráfica del escarabajo: cuerpo pulido, curvas ligeras y dos puntos de color azul que articulan la mirada de la pieza.",
@@ -68,17 +68,17 @@ export const products: Product[] = [
     ],
     model3D: "/products/dije-escarabajo/model.glb",
     poster3D: "/products/dije-escarabajo/frontal.avif",
-    whatsappMessage: inquiry("Dije Escarabajo", "INTI-DE-002"),
-    seoTitle: "Dije Escarabajo | Inti Joyería",
+    whatsappMessage: inquiry("Dije Escarabajo", "SK-DE-002"),
+    seoTitle: "Dije Escarabajo",
     seoDescription: "Explora el Dije Escarabajo plateado con acentos azules en fotografía y modelo 3D.",
   },
   {
-    id: "INTI-PR-003",
+    id: "SK-PR-003",
     slug: "anillo-piedras-rosas",
     name: "Anillo Piedras Rosas",
     subtitle: "Una secuencia de matices",
     category: "anillos",
-    collection: "seleccion-inti",
+    collection: "edicion-primera",
     shortDescription: "Cinco piedras en tonos rosa y lila sobre una montura dorada.",
     description:
       "Una banda de color compuesta por cortes y matices distintos. La alternancia entre tonos suaves e intensos crea un ritmo luminoso y contemporáneo.",
@@ -98,17 +98,17 @@ export const products: Product[] = [
     ],
     model3D: "/products/anillo-piedras-rosas/model.glb",
     poster3D: "/products/anillo-piedras-rosas/frontal.avif",
-    whatsappMessage: inquiry("Anillo Piedras Rosas", "INTI-PR-003"),
-    seoTitle: "Anillo Piedras Rosas | Inti Joyería",
+    whatsappMessage: inquiry("Anillo Piedras Rosas", "SK-PR-003"),
+    seoTitle: "Anillo Piedras Rosas",
     seoDescription: "Descubre el Anillo Piedras Rosas y sus matices en una galería de detalle y modelo 3D.",
   },
   {
-    id: "INTI-SO-004",
+    id: "SK-SO-004",
     slug: "anillo-solitario",
     name: "Anillo Solitario Luz",
     subtitle: "La claridad de una sola forma",
     category: "anillos",
-    collection: "seleccion-inti",
+    collection: "edicion-primera",
     shortDescription: "Solitario de líneas limpias en metal plateado con piedra clara central.",
     description:
       "Un diseño esencial que concentra la mirada en una piedra central. El aro pulido y el engaste abierto dejan entrar la luz desde distintos ángulos.",
@@ -129,8 +129,8 @@ export const products: Product[] = [
     ],
     model3D: "/products/anillo-solitario/model.glb",
     poster3D: "/products/anillo-solitario/frontal.avif",
-    whatsappMessage: inquiry("Anillo Solitario Luz", "INTI-SO-004"),
-    seoTitle: "Anillo Solitario Luz | Inti Joyería",
+    whatsappMessage: inquiry("Anillo Solitario Luz", "SK-SO-004"),
+    seoTitle: "Anillo Solitario Luz",
     seoDescription: "Mira el Anillo Solitario Luz desde distintos ángulos y explora su reconstrucción 3D.",
   },
 ];

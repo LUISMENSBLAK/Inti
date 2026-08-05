@@ -12,7 +12,7 @@ export function InfoPage({ eyebrow, title, intro, children }: { eyebrow: string;
       <section className="info-cta section-shell">
         <p className="eyebrow">Atención personal</p>
         <h2>Conversemos sobre la pieza que te acompaña.</h2>
-        <Link className="text-link" href="/contacto">Contactar a Inti</Link>
+        <Link className="text-link" href="/contacto">Contactar a Solee Konn</Link>
       </section>
     </main>
   );

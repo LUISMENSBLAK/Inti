@@ -10,7 +10,7 @@ export type Product = {
   name: string;
   subtitle: string;
   category: "anillos" | "dijes";
-  collection: "seleccion-inti";
+  collection: "edicion-primera";
   shortDescription: string;
   description: string;
   material: string;
