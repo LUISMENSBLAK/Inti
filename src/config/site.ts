@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Inti",
   description:
     "Boutique digital de joyería: piezas de carácter, fotografía de detalle y atención personalizada.",
-  url: "https://inti-joyeria.sites.openai.com",
+  url: "https://inti-joyeria.luistoscano15.chatgpt.site",
   locale: "es_MX",
   whatsappNumber: "",
   email: "contacto@inti-joyeria.mx",
